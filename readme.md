@@ -1,0 +1,1 @@
+Goal: Expert-level proficiency in Python and common AI/ML libraries (e.g., TensorFlow, PyTorch, LangChain, Hugging Face).
