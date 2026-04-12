@@ -25,7 +25,7 @@ y = "Hello, World!"
 #In the above code, we have created two variables: 'x' which holds the integer value 5, and 'y' which holds the string value "Hello, World!".
 print("The value of x is ",x)
 print("This is a string:" , y)
-print(str(x) + " " + y)
+print(str(x) + " " + y) (#Don't worry about the str() function for now, you will learn about in day03_numbers.py)
 
 #Change the variable value 
 y = "Python Crash Course"
