@@ -2,7 +2,7 @@
 #In variables, we can store a single values
 
 #so, how can we store multiple values in a single variable?
-#We can use lists to store multiple values in a single variable.
+#We can use lists to store multiple values or collection of items in a particular order in a single variable.
 
 #For example, we can create a list of fruits like this:
 fruits = ["apple", "banana", "orange", "grape"]
@@ -23,10 +23,12 @@ print(mixed_list)
 #We use square brackets [] and elements are separated by comma 
 
 #Now, let's learn how to access the elements in the list 
-#@3 can access the elment by using the index. Remember, index always starts with 0
-
+'''
+We can access the elment by using the index.
+Remember, index always starts with 0
+'''
 print(fruits[0])
-print(numbers[1])
+print(numbers[1])       
 print(mixed_list[2])
 
 #For exxample, you want to access last element in the list?
@@ -171,3 +173,61 @@ print(item_id) #Output - [2001, 1009, 1001, 2005] - Original list is not modifie
 
 #Finding the length of the list using len() function
 print(len(item_id))
+
+
+#Optional - More practice 
+
+categories = ["replacement parts", "Accessories", "Oil & Chemicals", "paint & body", "Tools & Equipment","Exterior & Interior", "Farm & Fleet" ]
+print(categories)
+
+print(categories[1]) #Output - Accessories
+print(categories[0].title()) #Output - Replacement Parts
+print(categories[3].upper()) #Output - PAINT & BODY
+print(categories[-1])
+print(f"I want to buy some {categories[4]} to repair my car.")
+print("=============")
+print (f"Categories before replacement - {categories}")
+print("=============")
+categories[0] = "Batteries"
+print(f"Cateories after replacement {categories}")
+print("=============")
+
+categories.append("Tires")
+print(categories)
+
+oil_and_chemicals_subcategories = []
+oil_and_chemicals_subcategories.append("Air Conditioning & Refrigeration")
+oil_and_chemicals_subcategories.append("Antifreeze and Radiator additives")
+oil_and_chemicals_subcategories.append("Battery Chemicals")
+
+print(oil_and_chemicals_subcategories)
+
+del oil_and_chemicals_subcategories[0]
+print(oil_and_chemicals_subcategories)
+
+popped_subcategory = oil_and_chemicals_subcategories.pop()
+print(popped_subcategory)
+
+oil_and_chemicals_subcategories.remove("Antifreeze and Radiator additives")
+print(oil_and_chemicals_subcategories)
+
+print("======*==========")
+print(categories)
+categories.sort()
+print(categories)
+
+categories.sort(reverse=True)
+print(categories)
+
+print(sorted(categories)) #This will return a new sorted list
+print(categories) #Original list is not modified
+
+categories.reverse()
+print(categories)
+
+print(len(categories))
+
+
+
+
+
